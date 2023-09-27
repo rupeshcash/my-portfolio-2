@@ -1,0 +1,22 @@
+#about-section {
+    position: relative;
+}
+
+.about-details {
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+.about-details {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.section-container {
+    gap: 4rem;
+    height:80%;
+}
+

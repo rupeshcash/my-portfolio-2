@@ -1,49 +1,24 @@
 import React from 'react'
+import Profile from '../Profile/index'
+import About from '../About/index'
+import Experience from '../Experience'
+import Projects from '../Projects/index'
+import Contact from '../Contact/index'
+import NavLinks from '../Navbar/NavLinks'
 import './index.css'
-import profilePicture from '../../assets/profile-pic.png'
-import linkedInPicture from '../../assets/linkedin.png'
-import githubPicture from '../../assets/github.png'
 
-
-import { useNavigate } from "react-router-dom";
-export default function Home() {
-
-  const downloadResume = () => {
-    const pdfPath = '/resume.pdf';
-    window.open(pdfPath, '_blank');
-  };
-
-  const navigate = useNavigate();
-  const navigateTo = (path) => {
-    console.log(path)
-    navigate(path);
-  }
-
-  const openUrl = (url) => {
-    window.open(url, '_blank', 'noreferrer');
-  }
-
+export default function index() {
   return (
-    <section className='home'>
-      <div className='profile-pic-container'>
-        <img src = {profilePicture} alt="Profile"/>
-      </div>
-      <div className='profile-text'>
-        <p className='profile-pargraph-p1'>Hello, I'm</p>
-        <h1 className='title'>Rupesh K.</h1>
-        <p className='profile-pargraph-p2'>
-          Web Developer
-        </p>
-        <div className='btn-container'>
-            <button className='btn btn-color-2' onClick={downloadResume}>Download Resume</button>
-            <button className='btn btn-color-1' onClick={() => navigateTo('/contact')}>Contact</button>
+    <>
+        <Profile/>
+        <About/>
+        <Experience/>
+        <Projects/>
+        <Contact/>
+        <div className='footer-div'>
+          <NavLinks/>
+          <p>Copyright © 2023 Rupesh Kashyap. All Rights Reserved.</p>
         </div>
-        <div class = 'social-container'>
-          <img src={linkedInPicture} alt="linkedin profile" class="icon" onClick={()=> openUrl('https://www.linkedin.com/in/rupesh-kashyap-94a724113/')}/>
-          <img src={githubPicture} alt="github profile" class="icon" onClick={()=> openUrl('https://www.github.com/rupeshcash')}/>
-        </div>
-      </div>
-    </section>
-
+    </>
   )
 }

@@ -6,8 +6,8 @@ import { Outlet } from 'react-router-dom';
 export default function BaseLayout() {
   return (
     <>
+      <Navbar/>
       <div className='page'>
-          <Navbar/>
           <Outlet/>
       </div>
     </>
