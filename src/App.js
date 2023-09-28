@@ -7,7 +7,6 @@ import Home from './components/Home/index'
 import BaseLayout from './components/BaseLayout';
 import {Routes, Route} from 'react-router-dom'
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDW19YUTeaAWT1UiHswELYRYaT3BNnj1WE",
@@ -20,8 +19,7 @@ const firebaseConfig = {
 };
 
 function App() {
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+  initializeApp(firebaseConfig);
 
   return (
      <>
