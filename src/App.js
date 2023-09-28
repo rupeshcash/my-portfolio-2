@@ -6,8 +6,23 @@ import Projects from './components/Projects/index'
 import Home from './components/Home/index'
 import BaseLayout from './components/BaseLayout';
 import {Routes, Route} from 'react-router-dom'
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDW19YUTeaAWT1UiHswELYRYaT3BNnj1WE",
+  authDomain: "rupesh-kashyap.firebaseapp.com",
+  projectId: "rupesh-kashyap",
+  storageBucket: "rupesh-kashyap.appspot.com",
+  messagingSenderId: "489165676801",
+  appId: "1:489165676801:web:08e0d1e894b7fb7e07bb00",
+  measurementId: "G-4GP1Q5VPMB"
+};
 
 function App() {
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
   return (
      <>
       <Routes>
