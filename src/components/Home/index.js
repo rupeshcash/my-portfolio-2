@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Profile from '../Profile/index'
 import About from '../About/index'
 import Experience from '../Experience'
@@ -7,7 +7,14 @@ import Contact from '../Contact/index'
 import NavLinks from '../Navbar/NavLinks'
 import './index.css'
 
-export default function index() {
+export default function Index() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+  useEffect(() => {
+    window.addEventListener('resize', function(event){
+      setIsMobile(window.innerWidth < 1200)
+    })
+  }, [isMobile]);
+
   return (
     <>
         <Profile/>

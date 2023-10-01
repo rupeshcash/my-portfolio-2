@@ -24,7 +24,7 @@ export default function Profile() {
   }
 
   return (
-    <section className='home'>
+    <section id='profile-section'>
       <div className='section-pic-container'>
         <img src = {profilePicture} alt="Profile"/>
       </div>
@@ -38,9 +38,9 @@ export default function Profile() {
             <button className='btn btn-color-2' onClick={downloadResume}>Download Resume</button>
             <button className='btn btn-color-1' onClick={() => navigateTo('/contact')}>Contact</button>
         </div>
-        <div class = 'social-container'>
-          <img src={linkedInPicture} alt="linkedin profile" class="icon" onClick={()=> openUrl('https://www.linkedin.com/in/rupesh-kashyap-94a724113/')}/>
-          <img src={githubPicture} alt="github profile" class="icon" onClick={()=> openUrl('https://www.github.com/rupeshcash')}/>
+        <div className = 'social-container'>
+          <img src={linkedInPicture} alt="linkedin profile" className="icon" onClick={()=> openUrl('https://www.linkedin.com/in/rupesh-kashyap-94a724113/')}/>
+          <img src={githubPicture} alt="github profile" className="icon" onClick={()=> openUrl('https://www.github.com/rupeshcash')}/>
         </div>
       </div>
     </section>

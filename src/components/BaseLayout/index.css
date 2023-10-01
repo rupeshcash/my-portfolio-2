@@ -29,6 +29,7 @@ section {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    flex-wrap: wrap;
 }
 
 .section-container {
@@ -53,8 +54,8 @@ section {
 
 .section-pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    min-height: 400px;
+    min-width: 400px;
     margin: auto 0;
 }
 
@@ -116,3 +117,22 @@ article {
 article .icon {
     cursor: default;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    #profile-section {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .small-containers {
+      flex-wrap: wrap;
+    }
+    #contact-section,
+    #projects-section {
+      height: fit-content;
+    }
+  }
