@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTheme } from '../ThemeContext/ThemeContext';
 
 export default function NavLinks() {
     const handleClickScroll = (elem) => {
@@ -8,9 +9,11 @@ export default function NavLinks() {
         element.scrollIntoView({ behavior: 'smooth' });
         }
     };
+    const {theme} = useTheme();
+    
     return (
         <>
-            <ul className='nav-links'>
+            <ul className={theme === 'dark' ? 'nav-links dark-theme' : 'nav-links'}>
             <li><a href="#about" onClick={() => handleClickScroll("about-section")}>About</a></li>
             <li><a href="#experience"  onClick={() => handleClickScroll("experience-section")}>Experience</a></li>
             <li><a href="#projects"  onClick={() => handleClickScroll("projects-section")}>Projects</a></li>

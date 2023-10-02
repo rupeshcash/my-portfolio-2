@@ -212,6 +212,25 @@ article .icon {
   }
 
   .dark-theme {
-    background: black;
-    color: aquamarine;
+    background: var(--primary-background);
+    color: var(--primary-text-color);
+
+    .nav-logo {
+      color: var(--secondary-text-color);
+    }
+
+    .menu-links {
+      background: var(--primary-background);
+      color: var(--primary-text-color);
+    }
+
+    .details-container {
+      background: var(--secondary-background);
+    }
+
+    h1, h2, h3, p {
+      color: var(--primary-text-color);
+    }
+
+    
   }

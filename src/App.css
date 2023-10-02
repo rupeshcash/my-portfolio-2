@@ -1,3 +1,12 @@
 .App {
   text-align: center;
 }
+
+
+:root {
+  --primary-background: #000;
+  --secondary-background: #110d17;
+  --primary-text-color:rgb(199, 199, 199);
+  --secondary-text-color: aquamarine;
+  --opposite-background: white;
+}
