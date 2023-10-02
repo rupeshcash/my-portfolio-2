@@ -1,11 +1,7 @@
 .projects-section {
     position: relative;
 }
-.project-details-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
 
 .color-container {
     border-color: rgb(163, 163, 163);
@@ -14,9 +10,9 @@
 
   
 .project-img {
-    border-radius: 2rem;
-    height: 400px;
-    align-self: center;
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
 }
 
 .project-title {

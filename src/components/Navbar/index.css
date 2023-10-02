@@ -35,6 +35,15 @@ a:hover {
     cursor: default;
 }
 
+.nav-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-right-icon {
+    padding: 0 1rem;
+}
+
 .hamburger-menu {
     position: relative;
     display: inline-block;

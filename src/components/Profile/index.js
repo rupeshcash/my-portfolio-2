@@ -3,7 +3,7 @@ import './index.css'
 import profilePicture from '../../assets/profile-pic.png'
 import linkedInPicture from '../../assets/linkedin.png'
 import githubPicture from '../../assets/github.png'
-
+import arrowIcon from '../../assets/arrow.png'
 
 import { useNavigate } from "react-router-dom";
 export default function Profile() {
@@ -32,7 +32,7 @@ export default function Profile() {
         <p className='profile-pargraph-p1'>Hello, I'm</p>
         <h1 className='title'>Rupesh K.</h1>
         <p className='profile-pargraph-p2'>
-          Fullstack Developer
+          Software Developer
         </p>
         <div className='btn-container'>
             <button className='btn btn-color-2' onClick={downloadResume}>Download Resume</button>
@@ -43,6 +43,7 @@ export default function Profile() {
           <img src={githubPicture} alt="github profile" className="icon" onClick={()=> openUrl('https://www.github.com/rupeshcash')}/>
         </div>
       </div>
+      <img src={arrowIcon} className='icon arrow' alt="arrow"/>
     </section>
   )
 }

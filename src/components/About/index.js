@@ -17,7 +17,7 @@ export default function About() {
               <div className='details-container'>
                 <img src= {experience} alt="experience" className='icon'/>
                 <h3>Experience</h3>
-                <p>4+ years <br/>System Architect</p>
+                <p>4+ years <br/>Software Engineer</p>
               </div>
               <div className='details-container'>
                 <img src= {experience} alt="experience" className='icon'/>
@@ -28,7 +28,7 @@ export default function About() {
             <div className='text-container'>
               <p>
                 I started my full time professional career with Samsung electronics, Noida in 2019. Since then, i have worked on multiple projects, with multiple teams and in different companies. My skills and expertise mostly lie 
-                in developing and designing systems and leading the teams to achieve such goals. I find fun playing with constraints like system cost, time, deliverables and the team to achieve the same.
+                in developing and designing systems. I like to have fun optimizing my work with constraints like time and resources i am given to play with. 
               </p>
             </div>
           </div>
