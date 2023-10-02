@@ -118,10 +118,7 @@ article .icon {
     cursor: default;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
+
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
