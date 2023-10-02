@@ -27,7 +27,8 @@ export default function About() {
             </div>
             <div className='text-container'>
               <p>
-                Labore ullamco Lorem adipisicing ea cupidatat culpa elit aliquip nulla sint est. Enim magna consequat incididunt ea minim. Ad sint anim incididunt officia anim consectetur. Est veniam aute irure exercitation elit ad ullamco sit sint incididunt velit labore. Dolore laborum deserunt anim duis veniam ad.
+                I started my full time professional career with Samsung electronics, Noida in 2019. Since then, i have worked on multiple projects, with multiple teams and in different companies. My skills and expertise mostly lie 
+                in developing system whether it has to be distributed system or a static frontend application in android. 
               </p>
             </div>
           </div>
