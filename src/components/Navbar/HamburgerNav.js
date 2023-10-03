@@ -1,8 +1,6 @@
 import React from 'react'
-import { useTheme } from '../ThemeContext/ThemeContext';
 
 export default function HamburgerNav() {
-    const { theme } = useTheme();
 
     const toggleMenu = (elem) => {
         const menu = document.querySelector(".menu-links");
