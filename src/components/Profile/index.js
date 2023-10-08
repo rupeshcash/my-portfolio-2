@@ -3,7 +3,6 @@ import './index.css'
 import profilePicture from '../../assets/profile-pic.png'
 import linkedInPicture from '../../assets/linkedin.png'
 import githubPicture from '../../assets/github.png'
-import arrowIcon from '../../assets/arrow.png'
 import NextPageArrow from '../NextPageArrow'
 
 export default function Profile() {
