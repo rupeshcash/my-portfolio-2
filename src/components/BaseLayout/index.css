@@ -226,11 +226,26 @@ article .icon {
 
     .details-container {
       background: var(--secondary-background);
+      .icon {
+        filter: invert(100%);
+      }
+    }
+
+    .social-container {
+      .icon {
+        filter: invert(100%);
+      }
     }
 
     h1, h2, h3, p {
       color: var(--primary-text-color);
     }
 
-    
+    .hamburger-icon span:first-child {
+      background: white;
+    }
+
+    .hamburger-icon span {
+      background: white;
+    }
   }
