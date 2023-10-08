@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import CustomArticle from './CustomArticle'
-import arrowIcon from '../../assets/arrow.png'
+import NextPageArrow from '../NextPageArrow'
 
 export default function Experience() {
   return (
@@ -37,7 +37,7 @@ export default function Experience() {
             </div>
           </div>
         </div>
-        <img src={arrowIcon} className='icon arrow' alt="arrow"/>
+        <NextPageArrow scrollTo={"projects-section"}/>
     </section>
   )
 }

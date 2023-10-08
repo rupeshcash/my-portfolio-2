@@ -1,7 +1,6 @@
-.projects-section {
+#projects-section {
     position: relative;
 }
-
 
 .color-container {
     border-color: rgb(163, 163, 163);
@@ -23,6 +22,12 @@
   .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+  }
+
+  .project-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .project-article-container {

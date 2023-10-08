@@ -3,7 +3,7 @@ import './index.css'
 import projectThumbnail from '../../assets/project-1.png'
 import projectThumbnail2 from '../../assets/project-2.png'
 import projectThumbnail3 from '../../assets/project-3.png'
-
+import NextPageArrow from '../NextPageArrow'
 import Project from './Project'
 export default function Projects() {
 
@@ -30,6 +30,7 @@ export default function Projects() {
               link2='https://theabsurdrebel.wordpress.com/2017/04/26/journey-of-the-bike-display-pov/'/>
           </div>
         </div>
+        <NextPageArrow scrollTo={"contact-section"}/>
     </section>
   )
 }

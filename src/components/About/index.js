@@ -2,7 +2,8 @@ import React from 'react'
 import './index.css'
 import aboutPic from '../../assets/about-pic.jpg'
 import experience from '../../assets/experience.png'
-import arrowIcon from '../../assets/arrow.png'
+import NextPageArrow from '../NextPageArrow'
+
 export default function About() {
   return (
     <section id="about-section">
@@ -33,7 +34,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <img src={arrowIcon} className='icon arrow' alt="arrow"/>
+        <NextPageArrow scrollTo={"experience-section"}/>
     </section>
   )
 }

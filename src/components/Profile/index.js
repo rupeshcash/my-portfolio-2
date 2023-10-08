@@ -4,6 +4,7 @@ import profilePicture from '../../assets/profile-pic.png'
 import linkedInPicture from '../../assets/linkedin.png'
 import githubPicture from '../../assets/github.png'
 import arrowIcon from '../../assets/arrow.png'
+import NextPageArrow from '../NextPageArrow'
 
 export default function Profile() {
 
@@ -41,7 +42,7 @@ export default function Profile() {
           <img src={githubPicture} alt="github profile" className="icon" onClick={()=> openUrl('https://www.github.com/rupeshcash')}/>
         </div>
       </div>
-      <img src={arrowIcon} className='icon arrow' alt="arrow"/>
+      <NextPageArrow scrollTo={"about-section"}/>
     </section>
   )
 }
