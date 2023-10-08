@@ -20,6 +20,10 @@
     text-decoration-color: white; 
 }
 
+.nav-links.dark-theme {
+    color: var(--primary-text-color);
+}
+
 .nav-links.dark-theme a{
     background: var(--primary-background);
     color: var(--primary-text-color);;
@@ -47,6 +51,7 @@ a:hover {
 
 .nav-right-icon {
     padding: 0 1rem;
+    cursor: pointer;
 }
 
 .hamburger-menu {

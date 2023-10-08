@@ -5,7 +5,6 @@ import linkedInPicture from '../../assets/linkedin.png'
 import githubPicture from '../../assets/github.png'
 import arrowIcon from '../../assets/arrow.png'
 
-import { useNavigate } from "react-router-dom";
 export default function Profile() {
 
   const downloadResume = () => {
@@ -13,10 +12,9 @@ export default function Profile() {
     window.open(pdfPath, '_blank');
   };
 
-  const navigate = useNavigate();
   const navigateTo = (path) => {
-    console.log(path)
-    navigate(path);
+    const element = window.document.getElementById("contact-section");
+    element.scrollIntoView({ behavior: 'smooth', block: 'end'});
   }
 
   const openUrl = (url) => {
@@ -36,7 +34,7 @@ export default function Profile() {
         </p>
         <div className='btn-container'>
             <button className='btn btn-color-2' onClick={downloadResume}>Download Resume</button>
-            <button className='btn btn-color-1' onClick={() => navigateTo('/contact')}>Contact</button>
+            <button className='btn btn-color-1' onClick={() => navigateTo('#contact')}>Contact</button>
         </div>
         <div className = 'social-container'>
           <img src={linkedInPicture} alt="linkedin profile" className="icon" onClick={()=> openUrl('https://www.linkedin.com/in/rupesh-kashyap-94a724113/')}/>
