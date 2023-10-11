@@ -18,7 +18,7 @@ export default function Index() {
   const {theme}  = useTheme();
 
   return (
-    <div className= {theme === 'dark' ? 'dark-theme' : ''}>
+    <div className= {theme === 'dark' ? 'dark-theme home' : 'home'}>
         <Profile/>
         <About/>
         <Experience/>
