@@ -5,7 +5,7 @@ import linkedInIcon from '../../assets/linkedin.png'
 
 export default function Contact() {
   return (
-    <section id="contact-section">
+    <section id="contact-section" className='hidden'>
     <p className="section-text-p1">Get in Touch</p>
     <h1 className="title">Contact Me</h1>
     <div className="contact-info-upper-container">

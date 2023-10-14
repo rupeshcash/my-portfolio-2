@@ -8,7 +8,7 @@ import Project from './Project'
 export default function Projects() {
 
   return (
-    <section id="projects-section">
+    <section id="projects-section" className='hidden'>
         <p className="section-text-p1">Browse my recent</p>
         <h1 className='title'>Projects</h1>
         <div className='project-details-container'>

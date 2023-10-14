@@ -5,7 +5,7 @@ import NextPageArrow from '../NextPageArrow'
 
 export default function Experience() {
   return (
-    <section id="experience-section">
+    <section id="experience-section" className='hidden'>
         <p className='section-text-p1'>Explore my</p>
         <h1 className='title'>Experience</h1>
         <div className='experience-details-container'>

@@ -6,7 +6,7 @@ import NextPageArrow from '../NextPageArrow'
 
 export default function About() {
   return (
-    <section id="about-section">
+    <section id="about-section" className='hidden'>
         <p className='section-text-p1'>Get to know more</p>
         <h1 className='title'>About me</h1>
         <div className='section-container'>

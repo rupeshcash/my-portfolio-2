@@ -7,7 +7,6 @@ import Home from './components/Home/index'
 import BaseLayout from './components/BaseLayout';
 import {Routes, Route} from 'react-router-dom'
 import { initializeApp } from "firebase/app";
-import { ThemeProvider } from './components/ThemeContext/ThemeContext';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDW19YUTeaAWT1UiHswELYRYaT3BNnj1WE",
@@ -23,17 +22,15 @@ function App() {
   initializeApp(firebaseConfig);
   
   return (
-     <ThemeProvider>
       <Routes>
         <Route path="/" element= {<BaseLayout/>}>
-          <Route index element= {<Home/>} />
+          <Route index element= {<Home/>}/>
           <Route path="about" element= {<About/>}/>
           <Route path="experience" element= {<Projects/>}/>
           <Route path="projects" element= {<Experience/>}/>
           <Route path="contact" element= {<Contact/>}/>
         </Route>
       </Routes>
-     </ThemeProvider>
   );
 }
 

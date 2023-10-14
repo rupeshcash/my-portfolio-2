@@ -22,7 +22,7 @@ export default function Profile() {
   }
 
   return (
-    <section id='profile-section'>
+    <section id='profile-section' className='hidden'>
       <div className='section-pic-container'>
         <img src = {profilePicture} alt="Profile"/>
       </div>

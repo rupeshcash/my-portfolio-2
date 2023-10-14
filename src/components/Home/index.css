@@ -5,17 +5,3 @@
     align-items: center;
     justify-content: space-around;
 }
-
-@keyframes slideInPage {
-    from {
-      transform: translateX(-200px);
-    }
-  
-    to {
-      transform: translateX(0);
-    }
-  }
-
-* {
-    animation: slideInPage 1.3s;  
-}
