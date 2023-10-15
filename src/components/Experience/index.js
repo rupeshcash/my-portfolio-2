@@ -10,7 +10,7 @@ export default function Experience() {
         <h1 className='title'>Experience</h1>
         <div className='experience-details-container'>
           <div className='small-containers'>
-            <div className='details-container'>
+            <div className='hidden details-container'>
               <h2 className='h2-subtitle'>Language Skills</h2>
                 <div className='article-container'>
                   <CustomArticle title="Java" subtitle="Experienced"/>
@@ -21,7 +21,7 @@ export default function Experience() {
                   <CustomArticle title="CSS" subtitle="Intermediate"/>
                 </div>
             </div>
-            <div className='details-container'>
+            <div className='hidden details-container'>
               <h2 className='h2-subtitle'>Frameworks & Development</h2>
               <div className='article-container'>
                   <CustomArticle title="Spring" subtitle="Experienced"/>

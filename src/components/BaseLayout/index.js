@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 export default function BaseLayout() {
 
   const containerRef = useRef(null);
-  useEffect( () => {
+  useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if(entry.isIntersecting) {

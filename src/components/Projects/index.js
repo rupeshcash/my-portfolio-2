@@ -17,7 +17,7 @@ export default function Projects() {
               title='My portfolio website' 
               projectThumbnail={projectThumbnail2} 
               link1='https://github.com/rupeshcash/my-portfolio-2' 
-              link2='https://github.com/rupeshcash/my-portfolio-2'/>
+              link2='https://rupesh-kashyap.web.app/'/>
             <Project 
               title='JSE - Java search Engine' 
               projectThumbnail={projectThumbnail3} 

@@ -15,12 +15,12 @@ export default function About() {
           </div>
           <div className='about-details'>
             <div className='small-containers'>
-              <div className='details-container'>
+              <div className='details-container hidden'>
                 <img src= {experience} alt="experience" className='icon'/>
                 <h3>Experience</h3>
                 <p>4+ years <br/>Software Engineer</p>
               </div>
-              <div className='details-container'>
+              <div className='details-container hidden'>
                 <img src= {experience} alt="experience" className='icon'/>
                 <h3>Education</h3>
                 <p>B.Tech. in Electrical Engineering <br/>IIT Delhi</p>

@@ -6,7 +6,7 @@ export default function Project({title, projectThumbnail, link1, link2}) {
       }
     
   return (
-    <div className='details-container color-container'>
+    <div className='hidden details-container color-container'>
         <div className='project-article-container'>
             <img src={projectThumbnail} alt="project-1" className="project-img"/>
             <h2 className='h2-subtitle project-title'>{title}</h2>
