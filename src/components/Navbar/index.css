@@ -46,12 +46,20 @@ a:hover {
 }
 
 .nav-logo {
-    font-size: 2rem;
-}
-
-.nav-logo:hover {
-    cursor: default;
-}
+    font-family: 'Georgia', serif; /* A classic and elegant font */
+    font-size: 24px;
+    color: #333; /* A subdued color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: none;
+    transition: color 1.3s;
+  }
+  
+  /* Hover effect */
+  .nav-logo:hover {
+    color: #555; /* Slight color change on hover */
+    transform: scale(1.05); /* Enlarge the logo on hover */
+  }
 
 .nav-right {
     display: flex;
