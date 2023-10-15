@@ -57,8 +57,9 @@ a:hover {
   
   /* Hover effect */
   .nav-logo:hover {
-    color: #555; /* Slight color change on hover */
-    transform: scale(1.05); /* Enlarge the logo on hover */
+    color: #555; 
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
 .nav-right {

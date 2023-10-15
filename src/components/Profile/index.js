@@ -4,6 +4,7 @@ import profilePicture from '../../assets/profile-pic.png'
 import linkedInPicture from '../../assets/linkedin.png'
 import githubPicture from '../../assets/github.png'
 import NextPageArrow from '../NextPageArrow'
+import TypedSentence from '../TypedSentence/index.js'
 
 export default function Profile() {
 
@@ -27,11 +28,9 @@ export default function Profile() {
         <img src = {profilePicture} alt="Profile"/>
       </div>
       <div className='section-text'>
-        <p className='profile-pargraph-p1'>Hello, I'm</p>
-        <h1 className='title'>Rupesh K.</h1>
-        <p className='profile-pargraph-p2'>
-          Software Developer
-        </p>
+        <div className='profile-section-text'>
+          <TypedSentence titleText="Hi," bodyStrings={["I am Rupesh", "I'm a writer...", "I write codes!"]}/>
+        </div>
         <div className='btn-container'>
             <button className='btn btn-color-2' onClick={downloadResume}>Download Resume</button>
             <button className='btn btn-color-1' onClick={() => navigateTo('#contact')}>Contact</button>
